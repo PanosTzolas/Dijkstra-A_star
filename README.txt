@@ -1,33 +1,23 @@
-Ονοματεπώνυμο: Παναγιώτης Τζόλας
-ΑΜ: παλίο 6230,  νέο 1041903
-email: ptzolas@ceid.upatras.gr
-
-
-Περιεχόμενα
--report.pdf	--> έχει αναλυτικά τι κάνει κάθε συνάρτηση
+Contents
 -src/main.cpp
-~Makefile	--> make για compile  & make clean για διαγραφή του program
+~Makefile	--> (make -> compile)  & (make clean -> delete program)
 
-Οδηγίες Εκτέλεσης
-~Στο main.cpp βρίσκεται ο κώδικας του προγράμματος.
+Running
+~ main.cpp --> source code
 
-~ Για να εκτελεστεί αρκεί ./program (αφού έχει γίνει make)
+~ To run ./program (after make)
 
--Για κάθε περίπτωση γραφήματος αρκεί να αλλαχθούν καθένα απο τα #define κάτω απο τα includes στην αρχή του προγράμματος.
+-To change graph dimensions
 ~ #define RANGE 	10
 ~ #define COLUMNS	1000 
 ~ #define ROWS 		30
 
--Για να τρέξει ο αλγόριθμος my_Dijkstra_SP:
-	~Στο τέλος του προγράμματος βρίσκεται σε σχόλιο η συνάρτηση για το my_Dijkstra_SP
-	~Για να τρέξει αρκεί να αφαιρεθεί το "//"
+-To run my_Dijkstra_SP:
+	~End of main my_Dijkstra_SP
+	~remove "//"
 
--Για να τρέξει ο αλγόριθμος my_A_star:
-	~Στο τέλος του προγράμματος βρίσκεται σε σχόλιο η συνάρτηση για το my_A_star
-	~Για να τρέξει αρκεί να αφαιρεθεί το "//"
+-To run my_A_star:
+	~End of main my_A_star
+	~remove "//"
 
--Προσοχή! Να μην εκτελεστούν μαζί ο my_Dijkstra_SP και ο my_A_star γιατί παίρνουν τα ίδια ορίσματα, οπότε ξεκινήσει την εκτέλεσή του ο δεύτερος, οι αποστάσεις
-στο d map_property θα είναι ήδη χαλαρωμένες και οι αποστάσεις minimum. (Για να αποφευχθεί αυτό μπορεί επίσης να αλλάξει η μορφή των ορισμάτων των συναρτήσεων ωστε
-να  είναι τοπική η μνήμη που κρατούν αντι για &)
-
- 
+-WARNING! Don't run my_Dijkstra_SP & my_A_star at the same time.
